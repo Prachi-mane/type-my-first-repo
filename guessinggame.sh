@@ -1,9 +1,14 @@
+myfunction()
+{
+
 flag=0
 actual_no=$(ls | wc -l)
+
 while [[ $flag -eq 0 ]]
  do
    echo "Guess the number of files : "
    read guess_no
+
    if [[ $guess_no -gt $actual_no ]]
    then
      echo "Guess too high....."
@@ -14,4 +19,8 @@ while [[ $flag -eq 0 ]]
       echo "Congratulations!!!!!!!your guess is correct"
       flag=1
    fi
+
 done
+
+}
+myfunction
